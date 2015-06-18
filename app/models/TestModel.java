@@ -1,18 +1,18 @@
 package models;
 
 
+import com.avaje.ebean.annotation.CacheStrategy;
+
 import javax.persistence.*;
 
 /**
  * Created by Administrator on 2015/6/15.
  */
+@CacheStrategy(readOnly = true)
 @Entity
 @Table(name = "T_TEST")
-public class TestModel extends AbstractModel{
+public class TestModel extends AbstractModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
 
     private boolean result = false;
 
@@ -24,11 +24,4 @@ public class TestModel extends AbstractModel{
         this.result = result;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 }
