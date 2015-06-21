@@ -34,7 +34,9 @@ public abstract class AbstractModel extends Model {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         AbstractModel that = (AbstractModel) o;
-        return new EqualsBuilder().append(id, that.id).isEquals();
+        return new EqualsBuilder().append(id, that.id).isEquals(
+
+        );
     }
 
     @Override

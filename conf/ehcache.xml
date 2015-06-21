@@ -1,0 +1,72 @@
+<ehcache>
+    <!--<ehcache updateCheck="true" monitoring="autodetect"
+             dynamicConfig="true" maxBytesLocalHeap="400M" maxBytesLocalOffHeap="2G">-->
+
+    <!--<diskStore path="user.dir.tmpdir"/>
+
+    <transactionManagerLookup class="net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup"
+                              properties="jndiName=java:/PlayDS" propertySeparator=";"/>
+    <cacheManagerEventListenerFactory class="" properties=""/>
+
+    <terracottaConfig url="localhost:9510"/>-->
+
+    <!-- <defaultCache maxEntriesLocalHeap="0" eternal="false" timeToIdleSeconds="1200" timeToLiveSeconds="1200">
+         <terracotta/>
+     </defaultCache>
+
+     <cache name="sampleCache1" maxEntriesLocalHeap="10000" maxEntriesLocalDisk="1000" eternal="false"
+            diskSpoolBufferSizeMB="20" timeToIdleSeconds="300" timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU"
+            transactionalMode="off">
+         <persistence strategy="localTempSwap"/>
+     </cache>
+
+     <cache name="sampleCache2" maxEntriesLocalHeap="1000" eternal="true" memoryStoreEvictionPolicy="FIFO"/>
+     <cache name="sampleCache3" maxEntriesLocalHeap="500" eternal="false" overflowToDisk="true" diskPersistent="true"
+            timeToIdleSeconds="300" timeToLiveSeconds="600" diskExpiryThreadIntervalSeconds="1"
+            memoryStoreEvictionPolicy="LFU"></cache>
+
+         Sample Terracotta clustered cache named sampleTerracottaCache.
+         This cache uses Terracotta to cluster the contents of the cache.
+
+     <cache name="sampleTerracottaCache" maxBytesLocalHeap="10m" eternal="false" timeToIdleSeconds="3600"
+            timeToLiveSeconds="1800">
+         <terracotta/>
+     </cache>
+     <cache name="xaCache"
+            maxEntriesLocalHeap="500"
+            eternal="false"
+            timeToIdleSeconds="300"
+            timeToLiveSeconds="600"
+            diskExpiryThreadIntervalSeconds="1"
+            transactionalMode="xa_strict">
+     </cache>
+
+     <cache name="copyCache"
+            maxEntriesLocalHeap="500"
+            eternal="false"
+            timeToIdleSeconds="300"
+            timeToLiveSeconds="600"
+            diskExpiryThreadIntervalSeconds="1"
+            copyOnRead="true"
+            copyOnWrite="true">
+         <copyStrategy class="net.sf.ehcache.store.compound.ReadWriteSerializationCopyStrategy"/>
+     </cache>
+
+     <cache name="tieredCache"
+            maxEntriesLocalHeap="10000"
+            eternal="false"
+            timeToLiveSeconds="600"
+            overflowToOffHeap="true"
+            maxBytesLocalOffHeap="4g"
+            diskExpiryThreadIntervalSeconds="1">
+         <persistence strategy="localTempSwap"/>
+     </cache>
+     -->
+    <!--<cache name="restartableCache"
+           maxEntriesLocalHeap="10000"
+           eternal="true"
+           overflowToOffHeap="true"
+           maxBytesLocalOffHeap="4g">
+        <persistence strategy="localRestartable"/>
+    </cache>-->
+</ehcache>
