@@ -8,6 +8,7 @@ import javax.persistence.*;
 /**
  * Created by Administrator on 2015/6/15.
  */
+@CacheStrategy
 @Entity
 @Table(name = "T_TEST")
 public class TestModel extends AbstractModel {

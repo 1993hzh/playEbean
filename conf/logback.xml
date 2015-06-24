@@ -14,8 +14,9 @@
     -->
     <logger name="play" level="INFO"/>
     <logger name="application" level="DEBUG"/>
-    <logger name="org.avaje.ebean.SQL" level="TRACE"/>
-    <!--<logger name="ch.qos.logback.classic.Logger" level="TRACE"/>-->
+    <!--<logger name="org.avaje.ebean.SQL" level="TRACE"/>-->
+    <!--<logger name="org.avaje.ebean.cache" level="TRACE"/>-->
+    <logger name="ch.qos.logback.classic.Logger" level="DEBUG"/>
 
     <root level="ERROR">
         <appender-ref ref="STDOUT"/>
